@@ -1,0 +1,9 @@
+.footer {
+    padding: 36px 0;
+    background-color: $accent-color;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+}

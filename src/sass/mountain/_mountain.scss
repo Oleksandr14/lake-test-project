@@ -1,0 +1,123 @@
+.mountain {
+ 
+    background: linear-gradient(to top, rgba(19, 19, 20), rgba(30, 29, 29, 0.4)), url('../images/mountain-bg.jpg') ; 
+    background-position: top;
+    background-repeat: no-repeat;
+    
+    padding-top: 105px;
+    padding-bottom: 110px;
+    background-size: cover;
+
+    
+
+    &__wrapper {
+        margin-left: auto;
+    
+        max-width: 1050px;
+    }
+
+    &__title {
+        margin-bottom: 50px;
+        font-weight: 700;
+        font-size: 50px;
+        color: $white-color;
+    }
+
+    &__text--wrap {
+        max-width: 354px;
+    }
+
+    &__text--text {
+        margin-bottom: 63px;
+        color: $white-color;
+    }
+
+    &__list {
+        position: relative;
+    }
+
+    &__list::after {
+         
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 1200px;
+          
+            display: block;
+            height: 2px;
+            background-color:$nav-color;
+         
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        padding-top: 57px;
+        padding-bottom: 57px;   
+    }
+
+    &__item:not(:last-child)::after {
+       content: "";
+       position: absolute;
+       bottom: 0;
+       width: 100%;
+     
+       display: block;
+       height: 2px;
+       background-color:$nav-color;
+    }   
+
+    &__info--wrapper {
+        max-width: 588px;
+    }
+
+    &__img--wrapper {
+        margin-left: auto;
+        width: 270px;
+        height: 270px;
+        margin-top: auto;
+        border: 1px solid green;
+        overflow: hidden;
+    }
+
+    &__list--title {
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 25px;
+        color: $white-color;
+    }
+
+    &__list--sub-title {
+        margin-bottom: 30px;
+        font-size: 20px;
+        color: $nav-color;
+    }
+
+    &__list--text {
+        margin-bottom: 40px;
+        color: $text-color;
+    }
+
+    &__list--btn {
+        display: block;
+        text-align: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        max-width: 140px;
+        background-color: $accent-color;
+        border-radius: 22px;
+
+        font-weight: 700;
+        font-size: 16px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+
+        &:hover {
+            opacity: 0.9;     
+        }
+    
+        &:active {
+            transform: translateY(2px);
+        }
+    }
+}

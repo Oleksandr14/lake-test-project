@@ -1,0 +1,173 @@
+.photo {
+    background-color: $first-background-color;
+
+    &__wrapper {
+        
+        padding-top: 100px;
+        padding-bottom: 75px;
+        
+    }
+
+    &__gallery {
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        max-width: 1205px;
+
+        border: 1px solid green;
+    }
+
+    &__cards--wrapper {
+        padding-top: 75px;
+    }
+}
+
+.photo__spot {
+    max-width: 153px;
+    text-align: right;
+    border: 1px solid green;
+
+    &--title {
+        font-size: 27px;
+        margin-bottom: 20px;
+        color: $white-color;
+    }
+
+    &--text {
+        margin-bottom: 120px;
+        font-size: 15px;
+        line-height: 1.33;
+        color: $white-color;
+      
+    }
+
+    &--link {
+        position: relative;
+        font-size: 15px;
+        line-height: 1.33;
+        color: $white-color;
+
+        transition: color $transition-time $cubic;
+    }
+
+    &--link:hover,
+    &--link:focus {
+        color: $accent-color;
+    }
+
+    &--link::before {
+        content: '';
+        position: absolute;
+        display: flex;
+        bottom: 3;
+
+        height: 1px;
+        width: 90px;
+        background-color: $white-color;
+    }
+}
+
+.photo__cards {
+    margin-bottom: 60px;
+    max-width: 930px;
+    border: 1px solid green;
+
+    &--list {
+        display: flex;
+        
+        width: 100%;
+        column-gap: 67px;
+    }
+
+    &--item {
+        max-width: 265px;
+    }
+
+    &--title {
+        margin-bottom: 8px;
+        font-weight: 700;
+        font-size: 25px;
+        color: $text-color;
+    }
+
+    &--state {
+       font-weight: 700;
+       margin-bottom: 30px;
+       color: $nav-color;
+    }
+
+    &--text {
+        margin-bottom: 45px;
+        color: $text-color;
+
+        font-size: 12px;
+        line-height: 1.33;
+    }
+
+    &--link {
+        color: $accent-color;
+
+        font-size: 12px;
+        line-height: 1.33;
+
+        transition: opacity $transition-time $cubic;
+    }
+
+    &--link:hover,
+    &--link:focus {
+        opacity: 0.7;
+    }
+}
+
+.img__wrapper {
+    margin-bottom: 45px;
+    max-width: 265px;
+    max-height: 265px;
+    overflow: hidden;
+}
+
+.edition-photo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 930px;
+
+    &__text {
+        position: relative;
+        font-size: 12px;
+        color: $white-color;
+    }
+
+    &__text::after {
+        content:'';
+        position: absolute;
+        display: flex;
+        top: 50%;
+        left: 125px;
+
+        height: 1px;
+        width: 630px;
+        background-color: $nav-color;
+    }
+
+    &__number {
+        position: relative;
+        padding-right: 115px;
+        color: $white-color;
+    }
+
+    &__number::after {
+        content:'';
+        position: absolute;
+        display: flex;
+        top: 50%;
+        left: 60px;
+
+        height: 1px;
+        width: 75px;
+        background-color:$nav-color;
+    }
+
+    
+}
+

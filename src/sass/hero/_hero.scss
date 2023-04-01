@@ -1,0 +1,157 @@
+.hero {
+   background-image: linear-gradient(to top, rgba(11, 11, 14, 0.8), rgba(50, 50, 50, 0.4)), url('../images/lake.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+
+    &__wrapper {
+        position: relative;
+        padding-top: 290px;
+        padding-bottom: 290px;
+        padding-left: 325px;
+        
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        row-gap: 45px;
+        max-width: 330px;
+    }
+
+    &__title {
+        font-size: 50px;
+        color: $white-color;
+    }
+
+    &__text {
+        color: $text-color;
+        font-size: 16px;
+        line-height: 1.51;
+    }
+}
+
+.navigation {
+    position: absolute;
+    top:  90px;
+    left: -56;
+    
+    padding-top: 80px;
+    padding-bottom: 434px;
+    padding-left: 56px;
+    width: 270px;
+    background-color: #00000028;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 45px;
+        color: $nav-color;
+
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    & a {
+        transition: color $transition-time $cubic;
+    }
+
+    & a:hover,
+    & a:focus {
+        color: $white-color;
+    }
+
+}
+
+.navigation__item .active {
+    color: $white-color;
+}
+
+.active::after {
+    content: '';
+    position: absolute;
+    bottom: 4;
+    right: 0;
+    display: block;
+
+    height: 2px;
+    width: 90px;
+    background-color: $white-color;
+}
+
+.edition {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    margin-left: auto;
+    max-width: 930px;
+
+    &__btn { 
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    &__text {
+        position: relative;
+        margin-left: 15px;
+        font-size: 12px;
+        color: $white-color;
+    }
+
+    &__number {
+        position: relative;
+        margin-left: 635px;
+        color: $white-color;
+    }
+
+    &__number::after {
+        content:'';
+        position: absolute;
+        display: flex;
+        top: 50%;
+        left: 60px;
+
+        height: 1px;
+        width: 75px;
+        background-color:$nav-color;
+    }
+
+    &__number::before {
+        content:'';
+        position: absolute;
+        display: flex;
+        top: 50%;
+        right: 60;
+
+        height: 1px;
+        width: 558px;
+        background-color: $nav-color;
+    }
+}
+
+.btn { 
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $white-color;
+    cursor: pointer;
+
+    transition: opacity $transition-time $cubic;
+
+    &:hover,
+    &:focus {
+        opacity: 0.8;  
+    }
+}
+
+
+
+  
+
+
+

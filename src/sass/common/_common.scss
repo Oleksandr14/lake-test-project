@@ -1,0 +1,42 @@
+body {
+    position: relative;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 0 15px;
+    border: 1px solid green;
+}
+
+a {
+    font-family: inherit;
+    color: inherit;
+}
+
+.button {
+    text-align: center;
+    padding: 12px 0;
+    max-width: 140px;
+    background-color: $accent-color;
+    color: $logo-color;
+    border-radius: 22px;
+
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+
+    transition: opacity $transition-time $cubic;
+
+    &:hover {
+        opacity: 0.9;     
+    }
+
+    &:active {
+        transform: translateY(2px);
+    }
+
+}
+
+

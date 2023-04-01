@@ -1,0 +1,193 @@
+.gallery {
+    padding-top: 75px;
+    padding-bottom: 105px;
+    background-color: $first-background-color;
+
+    &__wrapper {
+       position: relative;
+       display: flex;
+       justify-content: flex-end;
+
+    }
+}
+
+.gallery__photo--wrappers {
+    margin-left: 120px;
+    padding-top: 72px;
+}
+
+.photo__spot--text--gallery {
+    font-size: 15px;
+    line-height: 1.33;
+    color: $white-color;
+}
+
+.gallery__pictures {
+    position: relative; 
+    width: 930px;
+    height: 930px;
+
+    border: 1px solid orange;
+}
+
+
+
+ .gallery__item:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+  }
+
+  .gallery__item:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 270px;
+    height: 270px;
+    overflow: hidden;
+  }
+
+  .gallery__item:nth-child(3) {
+    position: absolute;
+    top: 330px;
+    right: 0;
+    width: 270px;
+    height: 270px;
+    overflow: hidden;
+  }
+
+  .gallery__item:nth-child(4) {
+   position: absolute;
+   background-origin: padding-box;
+   bottom: 0;
+    right: 0;
+    width: 600px;
+    height: 270px;
+    overflow: hidden;
+  }
+
+  .gallery__item:nth-child(5) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 270px;
+    height: 270px;
+    overflow: hidden;
+  }
+
+  .gallery__item--wrapper {
+    position: relative;
+    overflow: hidden;
+   
+  }
+
+  .gallery__item-overlay {
+    position: absolute;
+    padding: 30px 150px 30px 30px;
+    top: 433px;
+    left: 0;
+    height: 167px;
+
+    background-color: #00000075;
+
+    &--title {
+        margin-bottom: 10px;
+        font-size: 25px;
+        color: $white-color;
+    }
+
+    &--country {
+        font-weight: 700;
+        margin-bottom: 30px;
+        font-size: 16px;
+        color: $nav-color;
+    }
+
+    &--text {
+        font-size: 14px;
+        line-height: 1.33;
+        color: $text-color;
+    }
+   
+  }
+
+  .spot__wrapper {
+    position: absolute;
+    top: -17px;
+    display: flex;
+    align-items: center;
+    width: 930px;
+    border: 1px solid green;
+  }
+
+  .wrapper__button {
+    position: relative;
+    display: flex;
+    column-gap: 10px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 112px;
+        display: block;
+
+        height: 1px;
+        width: 505px;
+        background-color:$nav-color;
+    }
+
+    
+  }
+
+  .wrapper__text {
+    position: relative;
+    margin-left: 590px;
+    color: $white-color;
+
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 50%;
+
+        height: 1px;
+        left: 50px;
+        width: 30px;
+        background-color:$nav-color;
+    }
+   
+  }
+
+  .select__option {
+    position: relative;
+    margin-left: 90px;
+    background-color: transparent;
+    color: $white-color;
+    border: none;
+    cursor: pointer;
+
+    & option {
+        color: $first-background-color;
+    }
+   
+  }
+
+  .select-wrapper {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 50%;
+
+        left: 217px;
+        height: 1px;
+        width: 30px;
+        background-color:$nav-color;
+    }
+  }
