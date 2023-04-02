@@ -9,6 +9,10 @@
        justify-content: flex-end;
 
     }
+
+    @include desktop-1200 {
+      display: none;
+    }
 }
 
 .gallery__photo--wrappers {
@@ -26,8 +30,6 @@
     position: relative; 
     width: 930px;
     height: 930px;
-
-    border: 1px solid orange;
 }
 
 
@@ -39,6 +41,9 @@
     width: 600px;
     height: 600px;
     overflow: hidden;
+
+  
+  
   }
 
   .gallery__item:nth-child(2) {
@@ -48,6 +53,8 @@
     width: 270px;
     height: 270px;
     overflow: hidden;
+
+  
   }
 
   .gallery__item:nth-child(3) {
@@ -57,6 +64,7 @@
     width: 270px;
     height: 270px;
     overflow: hidden;
+
   }
 
   .gallery__item:nth-child(4) {
@@ -120,7 +128,7 @@
     display: flex;
     align-items: center;
     width: 930px;
-    border: 1px solid green;
+   
   }
 
   .wrapper__button {
@@ -138,6 +146,7 @@
         height: 1px;
         width: 505px;
         background-color:$nav-color;
+
     }
 
     

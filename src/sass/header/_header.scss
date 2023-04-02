@@ -9,6 +9,14 @@
         display: flex;
         align-items: center;
         height: 90px;
+
+        @include tablet  {
+            height: 80px;
+        }
+
+        @include mobile  {
+            height: 50px;
+        }
     }
 
     &__circle {
@@ -17,6 +25,18 @@
         height: 30px;
         background-color: $logo-color;
         border-radius: 50%;
+
+        @include tablet  {
+            margin-left: 8px;
+            width: 25px;
+            height: 25px;
+        }
+
+        @include mobile  {
+            margin-left: 20px;
+            width: 20px;
+            height: 20px;
+        }
     }
 }
 
@@ -24,6 +44,14 @@
     font-weight: 700;
     font-size: 30px;
     color: $logo-color;
+
+    @include tablet  {
+        font-size: 25px;
+    }
+
+    @include mobile  {
+        font-size: 15px;
+    }
 
     &::after {
         content: '';
@@ -33,6 +61,16 @@
         height: 2px;
 
         background-color: $logo-color;
+
+        @include tablet  {
+            width: 15px;
+            height: 2px;
+        }
+
+        @include mobile  {
+            width: 8px;
+            height: 1px;
+        }
     }
 
     &__wrapper {
@@ -43,6 +81,14 @@
         height: 100%;
         width: 360px;
         background-color: $accent-color;
+
+        @include tablet  {
+            width: 330px;
+        }
+
+        @include mobile  {
+            width: 160px;
+        }
     }
 }
 
@@ -51,6 +97,14 @@
     margin-left: auto;
     font-size: 16px;
     color: $text-color;
+
+    @include tablet {
+        font-size: 14px;
+    }
+
+    @include mobile  {
+        font-size: 11px;
+    }
 
     &__item {
         display: flex;
@@ -75,6 +129,16 @@
         width: 1px;
         height: 100%;
         background-color: $text-color;
+
+        @include tablet  {
+            margin-right: 40px;
+            margin-left: 40px;
+        }
+
+        @include mobile  {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
       }
 }
 

@@ -8,12 +8,26 @@
     padding-bottom: 110px;
     background-size: cover;
 
+    @include tablet {
+        padding-top: 70px;
+        padding-bottom: 85px;
+    }
+
+    @include mobile {
+        padding-top: 40px;
+        padding-bottom: 55px;
+    }
+
     
 
     &__wrapper {
         margin-left: auto;
     
         max-width: 1050px;
+
+        @include tablet {
+            max-width: 850px;
+        }
     }
 
     &__title {
@@ -21,14 +35,23 @@
         font-weight: 700;
         font-size: 50px;
         color: $white-color;
+
+        @include tablet {
+            margin-bottom: 30px;
+            font-weight: 700;
+            font-size: 40px;
+        }
     }
 
     &__text--wrap {
         max-width: 354px;
+
+        @include tablet {
+            max-width: 300px;
+        }
     }
 
     &__text--text {
-        margin-bottom: 63px;
         color: $white-color;
     }
 
@@ -47,6 +70,10 @@
             display: block;
             height: 2px;
             background-color:$nav-color;
+
+            @include tablet {
+                width: 750px;
+            }
          
     }
 
@@ -55,6 +82,17 @@
         display: flex;
         padding-top: 57px;
         padding-bottom: 57px;   
+
+        @include tablet {
+            padding-top: 37px;
+            padding-bottom: 37px;  
+        }
+
+        @include mobile {
+            flex-direction: column-reverse;
+            align-items: center;
+            row-gap: 15px;
+        }
     }
 
     &__item:not(:last-child)::after {
@@ -79,6 +117,12 @@
         margin-top: auto;
         border: 1px solid green;
         overflow: hidden;
+
+        @include tablet {
+            margin-left: unset;
+            width: 170px;
+            height: 170px;
+        }
     }
 
     &__list--title {
@@ -86,17 +130,31 @@
         font-weight: 700;
         font-size: 25px;
         color: $white-color;
+
+        @include tablet {
+            font-size: 20px; 
+            margin-bottom: 8px;
+        }
     }
 
     &__list--sub-title {
         margin-bottom: 30px;
         font-size: 20px;
         color: $nav-color;
+
+        @include tablet {
+            font-size: 18px; 
+            margin-bottom: 25px;
+        }
     }
 
     &__list--text {
         margin-bottom: 40px;
         color: $text-color;
+
+        @include tablet {
+            margin-bottom: 30px;
+        }
     }
 
     &__list--btn {
@@ -119,5 +177,13 @@
         &:active {
             transform: translateY(2px);
         }
+
+        @include tablet {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            max-width: 120px;
+            font-size: 14px;
+        }
+        
     }
 }

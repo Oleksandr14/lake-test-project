@@ -2,6 +2,11 @@
     padding-bottom: 55px;
     background-color: #131314;
 
+    @include tablet {
+        display: flex;
+        padding-bottom: 40px;
+    }
+
     &__wrapper {
         display: flex;
         align-items: center;
@@ -10,8 +15,15 @@
         margin-right: auto;
         max-width: 530px;
         height: 230px;
+        background-image: url('../images/world-map-12279.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
 
-        border: 1px solid red;
+        @include mobile {
+            max-width: 230px;
+            height: 130px;
+        }
     }
 
     &__title {
@@ -23,6 +35,12 @@
 .form {
     display: flex;
     column-gap: 5px;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+  }
    
 
     &__input {
@@ -31,6 +49,20 @@
         padding-bottom: 12px;
         width: 390px;
         border-radius: 22px;
+        border: none;
+
+        @include tablet {
+            padding-left: 10px;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            width: 290px;
+        }
+
+        @include mobile {
+            padding-top: 7px;
+            padding-bottom: 7px;
+            width: 190px;
+          }
     }
 
     &__btn {
@@ -53,6 +85,20 @@
     
         &:active {
             transform: translateY(2px);
+        }
+
+        @include tablet {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 120px;
+            font-size: 12px;
+        }
+
+        @include mobile {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            width: 100px;
+            font-size: 10px;
         }
     }
 }
